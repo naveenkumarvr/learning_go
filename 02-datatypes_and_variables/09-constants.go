@@ -18,4 +18,11 @@ func main() {
 	fmt.Printf("%v", name)
 	fmt.Printf("%v", myName)
 
+	/*
+		Some key factory
+		- we are not allowed to declare a constant without value
+		- Short form declaration using := is not allowed with const
+		- Once declared the values cannot be changed
+	*/
+
 }
