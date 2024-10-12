@@ -13,7 +13,7 @@ type s2 struct {
 
 func main() {
 	c := s1{x: 5}
-	c1 := s2{x: 5}
+	c1 := s2{x: 5} // It is not possible to compare struct of two types (which is two different type(name) struct)
 
 	c2 := s1{x: 6}
 	c3 := s1{x: 5}
