@@ -35,3 +35,42 @@ Expected Output:
 120
 Grocery
 */
+
+package main
+
+import "fmt"
+
+// Declare the Expense struct here
+// your code goes here
+type Expense struct {
+	name   string
+	amount float64
+	date   string
+}
+
+// Implement the Total method to calculate the total amount spent
+// your code goes here
+func Total(expense []Expense) float64 {
+	var totalAmount float64
+	for _, value := range expense {
+		totalAmount += value.amount
+	}
+	return totalAmount
+}
+
+// Implement the getName method on the Expense struct here
+// your code goes here
+func (expense Expense) getName() string {
+	return expense.name
+}
+
+func main() {
+	expenses := []Expense{
+		Expense{"Grocery", 50.0, "2022-01-01"},
+		Expense{"Gas", 30.0, "2022-01-02"},
+		Expense{"Restaurant", 40.0, "2022-01-03"},
+	}
+
+	fmt.Println(Total(expenses))
+	fmt.Println(expenses[0].getName())
+}
