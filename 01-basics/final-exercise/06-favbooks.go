@@ -117,8 +117,8 @@ func main() {
 
 	// your code for function calls to updatePages goes here
 	updatePages(&book[0], 210)
-	updatePages(&book[0], 250)
-	updatePages(&book[0], 295)
+	updatePages(&book[1], 250)
+	updatePages(&book[2], 295)
 	/*
 	   Print all the struct objects
 	   fmt.Println(book)
@@ -127,6 +127,6 @@ func main() {
 	// your code for printing objects goes here
 	for i := range book {
 
-		fmt.Printf("%+v \n", &book[i])
+		fmt.Printf("%v \n", &book[i])
 	}
 }
