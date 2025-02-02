@@ -31,15 +31,21 @@ func helloHandler(w http.ResponseWriter, r *http.Request) {
 func formHandler(w http.ResponseWriter, r *http.Request) {
 	// We have to return error if the http form which is submitted not correct. Or unable to parse it. Parse is nothing but reading the form data
 	// The parse form results are captured in err var and if it returns error that is handled in other section
+
+	if r.Method == "GET" {
+		http.ServeFile(w, r, "static/form.html")
+		return
+	}
 	if err := r.ParseForm(); err != nil {
 		// using formatted print to return the response in case of error with the formatter %v
 		fmt.Fprintf(w, "ParseForm() err: %v", err)
 		return
 	}
-	if r.FormValue("name") == "" || r.FormValue("address") == "" {
+	if (r.FormValue("name") == "" || r.FormValue("address") == "") && (r.Method == "POST") {
 		http.Error(w, "Error: Form value is empty", http.StatusUnprocessableEntity)
 		return
 	}
+
 	// Finally returning the response
 	fmt.Fprintf(w, "POST request successful\n")
 	// Trying to return the Captured value for our reference. We are extracting the data from FormValue
