@@ -53,7 +53,7 @@ DB, err := gorm.Open(<DRIVER TYPE>.Open(dsn),&gorm.Config{})
 - gorm.Config{} - Pointer to the gorm Basic settings struct to change the gorm default behavior based on the need
 
 ### What is in *&gorm.Config{}*, why we use them
-- This is pointer to the Gorm Default config struct. This gives you contorl over how Gorm work globally. You can change some of the gorm behavior by changing the values from the struct such as enable logging, changing naming strategies etc
+- This is pointer to the Gorm Default config struct. This gives you control over how gorm work globally. You can change some of the gorm behavior by changing the values from the struct such as enable logging, changing naming strategies etc
 - You can find more details on the settings here: https://gorm.io/docs/gorm_config.html
 ```go
 // EXAMPLE
