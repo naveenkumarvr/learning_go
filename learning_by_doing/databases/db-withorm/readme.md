@@ -14,7 +14,6 @@ This section covers
 rows, err :=db.Query("SELECT * FROM user LIMIT 1")
 ```
 ### Now: Using GORM (ORM Library in Go)
-- But when we use GORM we don't need to know the SQL query as such and it is human readable. Repeating of SQL queries is also can be avoided 
 ```go
 var user User // Here User refers to the struct (Model in DB)
 
@@ -22,7 +21,7 @@ result := db.Limit(1).Find(&user)
 // or
 result := db.First(&user)
 ```
-- So it is easy to work using ORM hence we go with ORM way of interacting with DB when using go. But there is a trade off that it will be bit slow compared to Native way but that is negligible.
+- We don't need to work on Direct SQL Quires, the code is more human readable, and it avoids repeating of same SQL Code everywhere, and easy to manage. Hence we are using ORM instead of native code.
 
 ## How to use ORM to Connect and interact with DB
 - First step we need to import the Go library for GORM. Go have its standard GORM library called "gorm.io/gorm". 
