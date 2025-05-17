@@ -64,7 +64,7 @@ DB, err := gorm.Open(<DRIVER TYPE>.Open(dsn),&gorm.Config{})
 ```
 ### Why we need var DB *\*gorm.DB* (Refer *main.go* file)
 I had question why the variable DB is declared and why it is pointing to gorm.DB
-- We declare DB variable which is a pointer to **gorm.DB struct**
+- The DB variable which is a pointer to **gorm.DB struct**
 - The gorm.DB struct contains the information like db connections, config and other internal states We use a pointer (*gorm.DB) because:
     - Gorm returns and excepts pointers from gorm.Open() and in its method calls
     - Using a pointer allows us to share the single db connection acrros the whole application without copying the entire struct
