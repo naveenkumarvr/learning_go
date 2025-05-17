@@ -6,21 +6,19 @@ In this I'm trying to learn
 - What are the key takeaway
 
 ## How Go Handles Database 
-- We know that we have two types of database SQL and NO-SQL
+- We know that database generally falls in two types SQL and NOSQL
 ### SQL
-- In order to interact with any Objects go uses Library, we need to import library.
-- Similarly Go have Build-In Library called "database/sql" to connect and interact with SQL DB. So we will import this Library at the beginning then we can interact with DB via GO.
+- In order to interact with any objects go uses Library, we need to import library.
+- Similarly Go have Build-In Library called "database/sql" to interact with SQL DB. So we will import this Library at the beginning then we can interact with DB via GO.
 ### No SQL
 - There is no Build-In Library for NOSQL DB when I'm writing this. However there are multiple third party library we can use to connect and interact with NOSQL library. 
 - One Such example is "go.mongodb.org/mongo-driver" for MongoDB
 
 
-From here we Focus on SQL DB as NOSQL Way of Working is almost similar.
-
 ## What is the native way I can use to connect to Database
 - As discussed in the above section we can import "database/sql" at the beginning and then we can start interacting with database. Refer the main.go for example 
-- However "database/sql" is more generic library which is created to interact with all SQL DBs. But there are many flavours in SQL db like postgres, Mysql, sqlite etc and each have their own unique features with it.
-- So in-order to make use all the feature along of specific flavour of DB we will import additional Drivers along with that. Refer the main.go file where we have imported '_ "github.com/go-sql-driver/mysql"' driver which works with database/sql native drivers and provide all the functionality. 
+- However "database/sql" is more generic library which is created to interact with all SQL DB with Common interfaces. But there are many flavours in SQL db like postgres, Mysql, sqlite etc.
+- So in-order to interact with specific flavour of DB we will import additional Drivers along with that. Refer the main.go file where we have imported '_ "github.com/go-sql-driver/mysql"' driver which works with database/sql native drivers and provide all the functionality. 
 
 
 ## What are the key takeaway
@@ -28,7 +26,7 @@ From here we Focus on SQL DB as NOSQL Way of Working is almost similar.
 - To Connect to DB we need to pass **DSN(DataSourceName)** input. The DSN contains all the information about your database such as UserName, Password, Server IP address, Port, DatabaseName. Along with that it also have some basic Config settings
 - Example DSN
 `dsn := "root:password@tcp(127.0.0.1:3306)/mysql?parseTime=true"`
-    - Here parseTime=true >> Says DB to parse the dateTime in Golang time.Time format if we don't give that the time details will be parsed as string which is not best practice.
+    - Here parseTime=true >> Ensures date/time fields are returned as time.Time instead of string
 - Example of Connecting to DB
     ```
     dsn := "root:password@tcp(127.0.0.1:3306)/mysql?parseTime=true"
@@ -39,6 +37,6 @@ From here we Focus on SQL DB as NOSQL Way of Working is almost similar.
     ```
 
 ## How to Run this Program
-- First initiate go with go init `go mod init example.com/go-basic`
-- Then download all the library using tidy `go mod tidy ` 
+- First initiate go module with go init `go mod init example.com/go-basic`
+- Then download and add all dependencies using tidy `go mod tidy ` 
 - Then you can directly run the program using `go run main.go`
