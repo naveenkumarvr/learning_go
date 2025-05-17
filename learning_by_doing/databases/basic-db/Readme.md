@@ -1,27 +1,44 @@
-# Basic Database Connection
-## Key Takeaway for Coding
-- When using native library for Database we need drivers, the reason is covered later
-- To connect to the DB you need to pass DSN(DataSourceName) as input
-- The DSN should contain username password and db address with port
-```
-Syntax: "<username>:<password>@tcp(<hostaddress>)/<dbname>?parseTime=true"
-```
-- DB connection comes with err handling by default so the syntax is 
-```
-db, err := sql.Open(<dbtype>,dsn)
-```
-- Handle err with panic option
-- Always close the connection when not needed
+# Database Basics with GO
+## Objective
+In this I'm trying to learn 
+- how go handles databases. 
+- What is the native way I can use to connect to Database
+- What are the key takeaway
 
-## Learnings
-- "database/sql" is a standard library for SQL database interactions in Go. Since it doesn't provide drivers for specific databases we need to import the drivers externally. 
-- We are using MySQL hence we used '_ "github.com/go-sql-driver/mysql'.
-- How you know the syntax: We can google to get suitable library for mysql and in the corresponding library documentation we will have the syntax. No need to worry on that. 
-- Github reference for this library https://github.com/go-sql-driver/mysql
-
-### Why we need to import driver
-- "database/sql is a general API". i.e it only provides functionality like Open(), Query(), Exec(), Ping(), etc which are common to db. But it doesn't know how to speak to specific flavour of db like mysql, postgres etc. 
-- So in order for ""database/sql" talk to corresponding flavour or db efficiently we need to import the db driver.
+## How Go Handles Database 
+- We know that we have two types of database SQL and NO-SQL
+### SQL
+- In order to interact with any Objects go uses Library, we need to import library.
+- Similarly Go have Build-In Library called "database/sql" to connect and interact with SQL DB. So we will import this Library at the beginning then we can interact with DB via GO.
+### No SQL
+- There is no Build-In Library for NOSQL DB when I'm writing this. However there are multiple third party library we can use to connect and interact with NOSQL library. 
+- One Such example is "go.mongodb.org/mongo-driver" for MongoDB
 
 
+From here we Focus on SQL DB as NOSQL Way of Working is almost similar.
 
+## What is the native way I can use to connect to Database
+- As discussed in the above section we can import "database/sql" at the beginning and then we can start interacting with database. Refer the main.go for example 
+- However "database/sql" is more generic library which is created to interact with all SQL DBs. But there are many flavours in SQL db like postgres, Mysql, sqlite etc and each have their own unique features with it.
+- So in-order to make use all the feature along of specific flavour of DB we will import additional Drivers along with that. Refer the main.go file where we have imported '_ "github.com/go-sql-driver/mysql"' driver which works with database/sql native drivers and provide all the functionality. 
+
+
+## What are the key takeaway
+- Along with the native library we use to connect to DB we have to import corresponding DB Drivers to make full use of the library. (We can get the drivers of corresponding db with a simple google search)
+- To Connect to DB we need to pass **DSN(DataSourceName)** input. The DSN contains all the information about your database such as UserName, Password, Server IP address, Port, DatabaseName. Along with that it also have some basic Config settings
+- Example DSN
+`dsn := "root:password@tcp(127.0.0.1:3306)/mysql?parseTime=true"`
+    - Here parseTime=true >> Says DB to parse the dateTime in Golang time.Time format if we don't give that the time details will be parsed as string which is not best practice.
+- Example of Connecting to DB
+    ```
+    dsn := "root:password@tcp(127.0.0.1:3306)/mysql?parseTime=true"
+	db, err := sql.Open("mysql", dsn)
+	if err != nil {
+		panic(err) // Stop the program immediately with give the error message
+	}
+    ```
+
+## How to Run this Program
+- First initiate go with go init `go mod init example.com/go-basic`
+- Then download all the library using tidy `go mod tidy ` 
+- Then you can directly run the program using `go run main.go`
