@@ -22,7 +22,7 @@ result := db.Limit(1).Find(&user)
 // or
 result := db.First(&user)
 ```
-- We don't need to work on Direct SQL Quires, the code is more human readable, and it avoids repeating of same SQL Code everywhere, and easy to manage. Hence we are using ORM instead of native code.
+- We don't need to work on Direct SQL queries, the code is more human readable, and it avoids repeating of same SQL Code everywhere, and easy to manage. Hence we are using ORM instead of native code.
 
 ## How to use ORM to Connect and interact with DB
 - First step we need to import the Go library for GORM. Go have its standard GORM library called "gorm.io/gorm". 
