@@ -37,6 +37,14 @@ This section covers
     ```
 
 ## How to Run this Program
+- Run Docker container with below command 
+    ```
+    docker run --name go-mysql \
+    -e MYSQL_ROOT_PASSWORD=password \
+    -e MYSQL_DATABASE=mysql \
+    -p 3306:3306 \
+    -d mysql:8.0
+    ```
 - First initiate go module with go init `go mod init example.com/go-basic`
 - Then download and add all dependencies using tidy `go mod tidy ` 
 - Then you can directly run the program using `go run main.go`

@@ -72,6 +72,14 @@ I had question why the variable DB is declared and why it is pointing to gorm.DB
 
 ## Example Connect with DB using GORM (Refer *main.go*)
 To run and test the file follow below steps
+- Run Docker container with below command 
+    ```
+    docker run --name go-mysql \
+    -e MYSQL_ROOT_PASSWORD=password \
+    -e MYSQL_DATABASE=mysql \
+    -p 3306:3306 \
+    -d mysql:8.0
+    ```
 - First initiate go module with go init `go mod init example.com/go-withorm`
 - Then download and add all dependencies using tidy `go mod tidy ` 
 - Then you can directly run the program using `go run main.go`
