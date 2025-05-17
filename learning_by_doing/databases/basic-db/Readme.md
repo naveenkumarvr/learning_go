@@ -1,6 +1,6 @@
 # Database Basics with GO
 ## Objective
-In this I'm trying to learn 
+This section covers
 - how go handles databases. 
 - What is the native way I can use to connect to Database
 - What are the key takeaway

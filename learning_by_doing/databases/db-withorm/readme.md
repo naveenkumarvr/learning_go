@@ -1,54 +1,71 @@
-# DB with ORM
-- ORM stands for Object Relational Mapping
-- It is a technique(tool) that helps us to interact with db in go lang struct instead of writing an sql Query
+# Database Interaction with GOLANG Using ORM
+
+## Objective
+This section covers
+- What is ORM, why we need it
+- How to use ORM to Connect and interact with DB
+
+## What is ORM Why we need it
+- ORM stands for **Object Relational Mapping**
+- *Why we need it ?* - By Definition, It is a technique that allows us to interact with SQL database using Go Struct and Objects instead of RAW SQL Queries. 
+- i.e Lets take an example that we need to query user table in a db and we want only one row as result. 
+### Example: Native SQL (Without ORM)
+```go
+rows, err :=db.Query("SELECT * FROM user LIMIT 1")
 ```
-Example
-SELECT * FROM users id = 1;
+### Now: Using GORM (ORM Library in Go)
+- But when we use GORM we don't need to know the SQL query as such and it is human readable. Repeating of SQL queries is also can be avoided 
+```go
+var user User // Here User refers to the struct (Model in DB)
 
-Instead of writing like this we can write
-
-// Here db.First is one of the Gorm method and we are pointing to the struct user and telling gorm to get the id = 1
-db.First(&user, 1) 
-
-// Your struct can be 
-type user struct {
-ID uint `grom:"primaryKey"`
-Name string
-Email string
-}
+result := db.Limit(1).Find(&user)
+// or
+result := db.First(&user)
 ```
+- So it is easy to work using ORM hence we go with ORM way of interacting with DB when using go. But there is a trade off that it will be bit slow compared to Native way but that is negligible.
 
-## Gorm Syntax
+## How to use ORM to Connect and interact with DB
+- First step we need to import the Go library for GORM. Go have its standard GORM library called "gorm.io/gorm". 
+- We will also import the corresponding driver for based on the flavour of DB we use such as Mysql, postgres or etc
+```go
+import (
+    "gorm.io/gorm"             // GORM core package
+    "gorm.io/driver/mysql"     // MySQL driver (use a different driver for PostgreSQL, SQLite, etc.)
+)
 ```
+- We will Declare a variable called DB which will be a pointer to *gorm.DB. This holds our DB connection. More on this in later section
+- Then we use Gorm syntax to connect to establish connection to the Database.
+
+### gorm syntax to connect to db
+```go
+// SYNATX
 gorm.Open(dialector, config)
-```
-- dialector : Tells gorm which database you are using (Mysql postrges etc)
-- config: gives additional settings to customize Gorm behavior
+//dialector : Tells gorm which database you are using (Mysql postrges etc)
+//config: gives additional settings to customize Gorm behavior
 
-Modified Syntax with some DB
-```
+// EXAMPLE
 dsn := "root:password@tcp(127.0.0.1:3306)/mysql?charset=utf8&parseTime=True&loc=Local"
-
-gorm.Open(mysql.Open(dsn), &gorm.Config{})
+DB, err := gorm.Open(<DRIVER TYPE>.Open(dsn),&gorm.Config{})
 ```
-- In the above code we are saying hey GORM use mysql driver and open the connection using DSN.(Remember the DSN which contains all the details about your server such as username passwrod, server ip, port and DB name.)
+- *gorm.Open - This will open the Gorm Connection with specified settings*
+- *Driver type - Defines which type of driver we are using such as mysql, postgres etc*
+- *\<DRIVER TYPE\>.Open(dsn) - This will open connection to the DB with the DSN settings*
+- gorm.Config{} - Pointer to the gorm Basic settings struct to change the gorm default behavior based on the need
 
-### gorm Config
-- The last part of gorm is the config , i.e ***&gorm.Config{}***. This is pointer to the Gorm Default config struct. If you want to change the behaviour of the Gorm you can modify or mention the parameter here
+### What is in *&gorm.Config{}*, why we use them
+- This is pointer to the Gorm Default config struct. If you want to change the behaviour of the Gorm you can modify or mention the parameter here
 - Some example such as more details you can find here https://gorm.io/docs/gorm_config.html
-```
+```go
+// EXAMPLE
 &gorm.Config{
     Logger: logger.Default.LogMode(logger.Info), // show SQL logs
     DisableForeignKeyConstraintWhenMigrating: true,
 }
 ```
-
-## Why we need var DB *gorm.DB
-Now I had question why the variable DB is declared and why it is pointing to gorm.DB
-
+### Why we need var DB *\*gorm.DB* (Refer *main.go* file)
+I had question why the variable DB is declared and why it is pointing to gorm.DB
 - We declare DB variable which is a pointer to **gorm.DB struct**
-- The gorm.DB struct contains the information like db connections, config and other internal states
-We use a pointer (*gorm.DB) because:
-- Gorm returns and excepts pointers from gorm.Open() and in its method calls
-- Using a pointer allows us to share the single db connection acrros the whole application without copying the entire struct
-- When we call methods like DB.AutoMigrate()or DB.Create() those methods are needs pointer as receivers so the value will be automatically dereferenced. 
+- The gorm.DB struct contains the information like db connections, config and other internal states We use a pointer (*gorm.DB) because:
+    - Gorm returns and excepts pointers from gorm.Open() and in its method calls
+    - Using a pointer allows us to share the single db connection acrros the whole application without copying the entire struct
+    - When we call methods like DB.AutoMigrate()or DB.Create() those methods needs pointer as receivers so the value will be automatically dereferenced. 
