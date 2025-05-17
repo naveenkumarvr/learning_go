@@ -4,6 +4,7 @@
 This section covers
 - What is ORM, why we need it
 - How to use ORM to Connect and interact with DB
+- Example to connect with DB using GORM
 
 ## What is ORM Why we need it
 - ORM stands for **Object Relational Mapping**
@@ -68,3 +69,9 @@ I had question why the variable DB is declared and why it is pointing to gorm.DB
     - Gorm returns and excepts pointers from gorm.Open() and in its method calls
     - Using a pointer allows us to share the single db connection acrros the whole application without copying the entire struct
     - When we call methods like DB.AutoMigrate()or DB.Create() those methods needs pointer as receivers so the value will be automatically dereferenced. 
+
+## Example Connect with DB using GORM (Refer *main.go*)
+To run and test the file follow below steps
+- First initiate go module with go init `go mod init example.com/go-withorm`
+- Then download and add all dependencies using tidy `go mod tidy ` 
+- Then you can directly run the program using `go run main.go`
