@@ -68,7 +68,8 @@ I had question why the variable DB is declared and why it is pointing to gorm.DB
 - The gorm.DB struct contains the information like db connections, config and other internal states We use a pointer (*gorm.DB) because:
     - Gorm returns and excepts pointers from gorm.Open() and in its method calls
     - Using a pointer allows us to share the single db connection acrros the whole application without copying the entire struct
-    - When we call methods like DB.AutoMigrate()or DB.Create() those methods needs pointer as receivers so the value will be automatically dereferenced. 
+    - When we call methods like DB.AutoMigrate()or DB.Create() those methods needs pointer as receivers so the value will be automatically dereferenced.
+- *In Simple terms it holds your connection details. We used pointer because the changes to the connection should be updated on the same variable* 
 
 ## Example Connect with DB using GORM (Refer *main.go*)
 To run and test the file follow below steps
