@@ -13,7 +13,7 @@ func main() {
 	for dbHost, port := range hostPort {
 		switch {
 		case port > 65534 || port < 1:
-			fmt.Printf("\n ERROR: Invalid port %s, %d", dbHost, port)
+			fmt.Printf("\nERROR: Invalid port %s, %d", dbHost, port)
 		case port < 1024:
 			fmt.Printf("\n WARN: Privileged Port %s, %d", dbHost, port)
 		default:
