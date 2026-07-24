@@ -67,13 +67,18 @@ func main() {
 			checkWebsite(u, resultChan)
 		}(url)
 	}
+    // 2. THE COORDINATOR: Wait and close in the background!
+    // This does NOT block main because it runs in its own goroutine.
+	go func() {
+		wg.Wait()
+		close(resultChan)
+	}()
 
-	for i := range targets {
-		fmt.Print(i)
-		fmt.Printf("%s\n", msg)
-	}
-
-	wg.Wait()
+    // 3. THE CONSUMER: Main routine loops over the channel dynamically
+    // This loop reads messages as they arrive, and exits automatically when closed!
+    for msg := range resultChan {
+        fmt.Println(msg)
+    }
 	fmt.Println("🏁 All concurrent checks completed successfully.")
 
 }
