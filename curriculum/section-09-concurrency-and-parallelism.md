@@ -38,3 +38,16 @@ Complete the three capstones under `projects/section-capstones/section-09/`. The
 - Topic projects required by the learner's plan have objective validation evidence.
 - The learner can explain the core mental models and key trade-offs without relying on memorized definitions.
 - All three section capstones meet mandatory acceptance criteria or have explicitly documented exceptions approved by the learner.
+
+
+## Project files
+
+- [Topic 1: Goroutines And Lifecycle Ownership](../projects/section-09/topics/topic-01-goroutines-and-lifecycle-ownership.md)
+- [Topic 2: Channels And Communication Patterns](../projects/section-09/topics/topic-02-channels-and-communication-patterns.md)
+- [Topic 3: Mutexes Atomics And Shared State](../projects/section-09/topics/topic-03-mutexes-atomics-and-shared-state.md)
+- [Topic 4: Worker Pools And Backpressure](../projects/section-09/topics/topic-04-worker-pools-and-backpressure.md)
+- [Topic 5: Cancellation Timeouts And Leak Prevention](../projects/section-09/topics/topic-05-cancellation-timeouts-and-leak-prevention.md)
+- [Topic 6: Race Conditions And Concurrency Testing](../projects/section-09/topics/topic-06-race-conditions-and-concurrency-testing.md)
+- [Section capstone: Capstone 1 Integrated Builder](../projects/section-09/capstones/capstone-1-integrated-builder.md)
+- [Section capstone: Capstone 2 Production Scenario](../projects/section-09/capstones/capstone-2-production-scenario.md)
+- [Section capstone: Capstone 3 Independent Engineering Challenge](../projects/section-09/capstones/capstone-3-independent-engineering-challenge.md)

@@ -38,3 +38,16 @@ Complete the three capstones under `projects/section-capstones/section-12/`. The
 - Topic projects required by the learner's plan have objective validation evidence.
 - The learner can explain the core mental models and key trade-offs without relying on memorized definitions.
 - All three section capstones meet mandatory acceptance criteria or have explicitly documented exceptions approved by the learner.
+
+
+## Project files
+
+- [Topic 1: Requirements And Quality Attributes](../projects/section-12/topics/topic-01-requirements-and-quality-attributes.md)
+- [Topic 2: Service Boundaries And Modular Monoliths](../projects/section-12/topics/topic-02-service-boundaries-and-modular-monoliths.md)
+- [Topic 3: Distributed Failure And Timeouts](../projects/section-12/topics/topic-03-distributed-failure-and-timeouts.md)
+- [Topic 4: Idempotency And Workflow State](../projects/section-12/topics/topic-04-idempotency-and-workflow-state.md)
+- [Topic 5: Consistency Coordination And Leader Concepts](../projects/section-12/topics/topic-05-consistency-coordination-and-leader-concepts.md)
+- [Topic 6: Resilience Patterns And Graceful Degradation](../projects/section-12/topics/topic-06-resilience-patterns-and-graceful-degradation.md)
+- [Section capstone: Capstone 1 Integrated Builder](../projects/section-12/capstones/capstone-1-integrated-builder.md)
+- [Section capstone: Capstone 2 Production Scenario](../projects/section-12/capstones/capstone-2-production-scenario.md)
+- [Section capstone: Capstone 3 Independent Engineering Challenge](../projects/section-12/capstones/capstone-3-independent-engineering-challenge.md)

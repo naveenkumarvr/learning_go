@@ -38,3 +38,16 @@ Complete the three capstones under `projects/section-capstones/section-17/`. The
 - Topic projects required by the learner's plan have objective validation evidence.
 - The learner can explain the core mental models and key trade-offs without relying on memorized definitions.
 - All three section capstones meet mandatory acceptance criteria or have explicitly documented exceptions approved by the learner.
+
+
+## Project files
+
+- [Topic 1: Inference Gateway Fundamentals](../projects/section-17/topics/topic-01-inference-gateway-fundamentals.md)
+- [Topic 2: Streaming Responses And Cancellation](../projects/section-17/topics/topic-02-streaming-responses-and-cancellation.md)
+- [Topic 3: Model Provider Adapters And Routing](../projects/section-17/topics/topic-03-model-provider-adapters-and-routing.md)
+- [Topic 4: Rag Service Integration](../projects/section-17/topics/topic-04-rag-service-integration.md)
+- [Topic 5: Rate Limits Quotas And Cost Controls](../projects/section-17/topics/topic-05-rate-limits-quotas-and-cost-controls.md)
+- [Topic 6: Evaluation Audit And Ai Observability](../projects/section-17/topics/topic-06-evaluation-audit-and-ai-observability.md)
+- [Section capstone: Capstone 1 Integrated Builder](../projects/section-17/capstones/capstone-1-integrated-builder.md)
+- [Section capstone: Capstone 2 Production Scenario](../projects/section-17/capstones/capstone-2-production-scenario.md)
+- [Section capstone: Capstone 3 Independent Engineering Challenge](../projects/section-17/capstones/capstone-3-independent-engineering-challenge.md)

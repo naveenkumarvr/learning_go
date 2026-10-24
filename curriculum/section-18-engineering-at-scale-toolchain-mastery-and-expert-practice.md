@@ -38,3 +38,16 @@ Complete the three capstones under `projects/section-capstones/section-18/`. The
 - Topic projects required by the learner's plan have objective validation evidence.
 - The learner can explain the core mental models and key trade-offs without relying on memorized definitions.
 - All three section capstones meet mandatory acceptance criteria or have explicitly documented exceptions approved by the learner.
+
+
+## Project files
+
+- [Topic 1: Technical Design Documents And Rfcs](../projects/section-18/topics/topic-01-technical-design-documents-and-rfcs.md)
+- [Topic 2: Large Scale Refactoring And Migrations](../projects/section-18/topics/topic-02-large-scale-refactoring-and-migrations.md)
+- [Topic 3: Multi Service Integration And Contract Testing](../projects/section-18/topics/topic-03-multi-service-integration-and-contract-testing.md)
+- [Topic 4: Release Engineering And Reproducible Builds](../projects/section-18/topics/topic-04-release-engineering-and-reproducible-builds.md)
+- [Topic 5: Operational Game Days And Failure Injection](../projects/section-18/topics/topic-05-operational-game-days-and-failure-injection.md)
+- [Topic 6: Independent Architecture Defense](../projects/section-18/topics/topic-06-independent-architecture-defense.md)
+- [Section capstone: Capstone 1 Integrated Builder](../projects/section-18/capstones/capstone-1-integrated-builder.md)
+- [Section capstone: Capstone 2 Production Scenario](../projects/section-18/capstones/capstone-2-production-scenario.md)
+- [Section capstone: Capstone 3 Independent Engineering Challenge](../projects/section-18/capstones/capstone-3-independent-engineering-challenge.md)

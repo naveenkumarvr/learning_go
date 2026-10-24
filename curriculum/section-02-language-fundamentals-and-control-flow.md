@@ -38,3 +38,16 @@ Complete the three capstones under `projects/section-capstones/section-02/`. The
 - Topic projects required by the learner's plan have objective validation evidence.
 - The learner can explain the core mental models and key trade-offs without relying on memorized definitions.
 - All three section capstones meet mandatory acceptance criteria or have explicitly documented exceptions approved by the learner.
+
+
+## Project files
+
+- [Topic 1: Declarations Constants And Scope](../projects/section-02/topics/topic-01-declarations-constants-and-scope.md)
+- [Topic 2: Primitive Types And Conversions](../projects/section-02/topics/topic-02-primitive-types-and-conversions.md)
+- [Topic 3: Operators And Control Flow](../projects/section-02/topics/topic-03-operators-and-control-flow.md)
+- [Topic 4: Strings Runes And Unicode](../projects/section-02/topics/topic-04-strings-runes-and-unicode.md)
+- [Topic 5: Input Output And Formatting](../projects/section-02/topics/topic-05-input-output-and-formatting.md)
+- [Topic 6: Basic Algorithmic Reasoning](../projects/section-02/topics/topic-06-basic-algorithmic-reasoning.md)
+- [Section capstone: Capstone 1 Integrated Builder](../projects/section-02/capstones/capstone-1-integrated-builder.md)
+- [Section capstone: Capstone 2 Production Scenario](../projects/section-02/capstones/capstone-2-production-scenario.md)
+- [Section capstone: Capstone 3 Independent Engineering Challenge](../projects/section-02/capstones/capstone-3-independent-engineering-challenge.md)

@@ -38,3 +38,16 @@ Complete the three capstones under `projects/section-capstones/section-04/`. The
 - Topic projects required by the learner's plan have objective validation evidence.
 - The learner can explain the core mental models and key trade-offs without relying on memorized definitions.
 - All three section capstones meet mandatory acceptance criteria or have explicitly documented exceptions approved by the learner.
+
+
+## Project files
+
+- [Topic 1: Functions And Multiple Returns](../projects/section-04/topics/topic-01-functions-and-multiple-returns.md)
+- [Topic 2: Methods And Receiver Choices](../projects/section-04/topics/topic-02-methods-and-receiver-choices.md)
+- [Topic 3: Interfaces And Implicit Implementation](../projects/section-04/topics/topic-03-interfaces-and-implicit-implementation.md)
+- [Topic 4: Function Values And Closures](../projects/section-04/topics/topic-04-function-values-and-closures.md)
+- [Topic 5: Generics And Type Constraints](../projects/section-04/topics/topic-05-generics-and-type-constraints.md)
+- [Topic 6: Api Design And Abstraction Judgment](../projects/section-04/topics/topic-06-api-design-and-abstraction-judgment.md)
+- [Section capstone: Capstone 1 Integrated Builder](../projects/section-04/capstones/capstone-1-integrated-builder.md)
+- [Section capstone: Capstone 2 Production Scenario](../projects/section-04/capstones/capstone-2-production-scenario.md)
+- [Section capstone: Capstone 3 Independent Engineering Challenge](../projects/section-04/capstones/capstone-3-independent-engineering-challenge.md)

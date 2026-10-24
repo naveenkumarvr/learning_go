@@ -38,3 +38,16 @@ Complete the three capstones under `projects/section-capstones/section-16/`. The
 - Topic projects required by the learner's plan have objective validation evidence.
 - The learner can explain the core mental models and key trade-offs without relying on memorized definitions.
 - All three section capstones meet mandatory acceptance criteria or have explicitly documented exceptions approved by the learner.
+
+
+## Project files
+
+- [Topic 1: Containerizing Go Services](../projects/section-16/topics/topic-01-containerizing-go-services.md)
+- [Topic 2: Kubernetes Apis And Client Go](../projects/section-16/topics/topic-02-kubernetes-apis-and-client-go.md)
+- [Topic 3: Controllers And Reconciliation Loops](../projects/section-16/topics/topic-03-controllers-and-reconciliation-loops.md)
+- [Topic 4: Custom Resources And Operator Lifecycle](../projects/section-16/topics/topic-04-custom-resources-and-operator-lifecycle.md)
+- [Topic 5: Leader Election Work Queues And Rate Limiting](../projects/section-16/topics/topic-05-leader-election-work-queues-and-rate-limiting.md)
+- [Topic 6: Platform Integration And Policy](../projects/section-16/topics/topic-06-platform-integration-and-policy.md)
+- [Section capstone: Capstone 1 Integrated Builder](../projects/section-16/capstones/capstone-1-integrated-builder.md)
+- [Section capstone: Capstone 2 Production Scenario](../projects/section-16/capstones/capstone-2-production-scenario.md)
+- [Section capstone: Capstone 3 Independent Engineering Challenge](../projects/section-16/capstones/capstone-3-independent-engineering-challenge.md)

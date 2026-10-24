@@ -38,3 +38,16 @@ Complete the three capstones under `projects/section-capstones/section-10/`. The
 - Topic projects required by the learner's plan have objective validation evidence.
 - The learner can explain the core mental models and key trade-offs without relying on memorized definitions.
 - All three section capstones meet mandatory acceptance criteria or have explicitly documented exceptions approved by the learner.
+
+
+## Project files
+
+- [Topic 1: Tcp Sockets And Network Fundamentals](../projects/section-10/topics/topic-01-tcp-sockets-and-network-fundamentals.md)
+- [Topic 2: Http Handlers And Routing](../projects/section-10/topics/topic-02-http-handlers-and-routing.md)
+- [Topic 3: Http Clients And Resilience](../projects/section-10/topics/topic-03-http-clients-and-resilience.md)
+- [Topic 4: Middleware Authentication And Authorization](../projects/section-10/topics/topic-04-middleware-authentication-and-authorization.md)
+- [Topic 5: Api Schemas And Versioning](../projects/section-10/topics/topic-05-api-schemas-and-versioning.md)
+- [Topic 6: Grpc And Protocol Trade Offs](../projects/section-10/topics/topic-06-grpc-and-protocol-trade-offs.md)
+- [Section capstone: Capstone 1 Integrated Builder](../projects/section-10/capstones/capstone-1-integrated-builder.md)
+- [Section capstone: Capstone 2 Production Scenario](../projects/section-10/capstones/capstone-2-production-scenario.md)
+- [Section capstone: Capstone 3 Independent Engineering Challenge](../projects/section-10/capstones/capstone-3-independent-engineering-challenge.md)

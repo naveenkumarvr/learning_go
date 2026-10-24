@@ -24,7 +24,7 @@ Progress from Go novice to independent production-grade Go engineer, with specia
 - **Section 18: Engineering at Scale, Toolchain Mastery and Expert Practice** — Stage 4 — Cloud-Native and AI Platform Specialization.
 
 ## How to use the roadmap
-Each section file describes the scope, prerequisites, outcomes, topics, and three section-level capstones. Each topic has a separate specification under `projects/topics/` containing three progressive projects. Section capstones integrate multiple topics. The three final capstones integrate the full curriculum.
+Each section file describes the scope, prerequisites, outcomes, topics, and three section-level capstones. Each topic has a separate specification under `projects/section-XX/topics/` containing three progressive projects. Section capstones integrate multiple topics. The three final capstones integrate the full curriculum.
 
 ## Recommended sequence
 Follow sections in order initially. If a validation exposes a prerequisite gap, temporarily study the missing topic, complete its remediation, then return to the original sequence. Section/week numbers are tracking aids, not calendar deadlines.

@@ -38,3 +38,16 @@ Complete the three capstones under `projects/section-capstones/section-05/`. The
 - Topic projects required by the learner's plan have objective validation evidence.
 - The learner can explain the core mental models and key trade-offs without relying on memorized definitions.
 - All three section capstones meet mandatory acceptance criteria or have explicitly documented exceptions approved by the learner.
+
+
+## Project files
+
+- [Topic 1: Errors As Values](../projects/section-05/topics/topic-01-errors-as-values.md)
+- [Topic 2: Wrapping And Classifying Errors](../projects/section-05/topics/topic-02-wrapping-and-classifying-errors.md)
+- [Topic 3: Defer And Cleanup](../projects/section-05/topics/topic-03-defer-and-cleanup.md)
+- [Topic 4: Panic And Recover Boundaries](../projects/section-05/topics/topic-04-panic-and-recover-boundaries.md)
+- [Topic 5: Validation And Defensive Programming](../projects/section-05/topics/topic-05-validation-and-defensive-programming.md)
+- [Topic 6: Timeouts Cancellation And Reliability Basics](../projects/section-05/topics/topic-06-timeouts-cancellation-and-reliability-basics.md)
+- [Section capstone: Capstone 1 Integrated Builder](../projects/section-05/capstones/capstone-1-integrated-builder.md)
+- [Section capstone: Capstone 2 Production Scenario](../projects/section-05/capstones/capstone-2-production-scenario.md)
+- [Section capstone: Capstone 3 Independent Engineering Challenge](../projects/section-05/capstones/capstone-3-independent-engineering-challenge.md)

@@ -38,3 +38,16 @@ Complete the three capstones under `projects/section-capstones/section-01/`. The
 - Topic projects required by the learner's plan have objective validation evidence.
 - The learner can explain the core mental models and key trade-offs without relying on memorized definitions.
 - All three section capstones meet mandatory acceptance criteria or have explicitly documented exceptions approved by the learner.
+
+
+## Project files
+
+- [Topic 1: Install And Inspect Go](../projects/section-01/topics/topic-01-install-and-inspect-go.md)
+- [Topic 2: Go Workspace And Module Basics](../projects/section-01/topics/topic-02-go-workspace-and-module-basics.md)
+- [Topic 3: Build Run Format And Vet](../projects/section-01/topics/topic-03-build-run-format-and-vet.md)
+- [Topic 4: Editor And Debugging Workflow](../projects/section-01/topics/topic-04-editor-and-debugging-workflow.md)
+- [Topic 5: Cli Workflow And Reproducibility](../projects/section-01/topics/topic-05-cli-workflow-and-reproducibility.md)
+- [Topic 6: Go Documentation And Dependency Hygiene](../projects/section-01/topics/topic-06-go-documentation-and-dependency-hygiene.md)
+- [Section capstone: Capstone 1 Integrated Builder](../projects/section-01/capstones/capstone-1-integrated-builder.md)
+- [Section capstone: Capstone 2 Production Scenario](../projects/section-01/capstones/capstone-2-production-scenario.md)
+- [Section capstone: Capstone 3 Independent Engineering Challenge](../projects/section-01/capstones/capstone-3-independent-engineering-challenge.md)

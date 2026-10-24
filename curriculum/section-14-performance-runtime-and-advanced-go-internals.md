@@ -38,3 +38,16 @@ Complete the three capstones under `projects/section-capstones/section-14/`. The
 - Topic projects required by the learner's plan have objective validation evidence.
 - The learner can explain the core mental models and key trade-offs without relying on memorized definitions.
 - All three section capstones meet mandatory acceptance criteria or have explicitly documented exceptions approved by the learner.
+
+
+## Project files
+
+- [Topic 1: Benchmarking And Profiling](../projects/section-14/topics/topic-01-benchmarking-and-profiling.md)
+- [Topic 2: Garbage Collection And Allocation](../projects/section-14/topics/topic-02-garbage-collection-and-allocation.md)
+- [Topic 3: Scheduler And Goroutine Behavior](../projects/section-14/topics/topic-03-scheduler-and-goroutine-behavior.md)
+- [Topic 4: Memory Layout And Compiler Diagnostics](../projects/section-14/topics/topic-04-memory-layout-and-compiler-diagnostics.md)
+- [Topic 5: Latency Throughput And Load Testing](../projects/section-14/topics/topic-05-latency-throughput-and-load-testing.md)
+- [Topic 6: Optimization With Evidence](../projects/section-14/topics/topic-06-optimization-with-evidence.md)
+- [Section capstone: Capstone 1 Integrated Builder](../projects/section-14/capstones/capstone-1-integrated-builder.md)
+- [Section capstone: Capstone 2 Production Scenario](../projects/section-14/capstones/capstone-2-production-scenario.md)
+- [Section capstone: Capstone 3 Independent Engineering Challenge](../projects/section-14/capstones/capstone-3-independent-engineering-challenge.md)

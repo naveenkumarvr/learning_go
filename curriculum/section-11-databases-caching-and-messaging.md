@@ -38,3 +38,16 @@ Complete the three capstones under `projects/section-capstones/section-11/`. The
 - Topic projects required by the learner's plan have objective validation evidence.
 - The learner can explain the core mental models and key trade-offs without relying on memorized definitions.
 - All three section capstones meet mandatory acceptance criteria or have explicitly documented exceptions approved by the learner.
+
+
+## Project files
+
+- [Topic 1: Sql And Database Access](../projects/section-11/topics/topic-01-sql-and-database-access.md)
+- [Topic 2: Transactions And Consistency](../projects/section-11/topics/topic-02-transactions-and-consistency.md)
+- [Topic 3: Migrations And Schema Evolution](../projects/section-11/topics/topic-03-migrations-and-schema-evolution.md)
+- [Topic 4: Caching And Invalidation](../projects/section-11/topics/topic-04-caching-and-invalidation.md)
+- [Topic 5: Queues And Event Driven Processing](../projects/section-11/topics/topic-05-queues-and-event-driven-processing.md)
+- [Topic 6: Outbox Deduplication And Recovery](../projects/section-11/topics/topic-06-outbox-deduplication-and-recovery.md)
+- [Section capstone: Capstone 1 Integrated Builder](../projects/section-11/capstones/capstone-1-integrated-builder.md)
+- [Section capstone: Capstone 2 Production Scenario](../projects/section-11/capstones/capstone-2-production-scenario.md)
+- [Section capstone: Capstone 3 Independent Engineering Challenge](../projects/section-11/capstones/capstone-3-independent-engineering-challenge.md)

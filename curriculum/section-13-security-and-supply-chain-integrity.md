@@ -38,3 +38,16 @@ Complete the three capstones under `projects/section-capstones/section-13/`. The
 - Topic projects required by the learner's plan have objective validation evidence.
 - The learner can explain the core mental models and key trade-offs without relying on memorized definitions.
 - All three section capstones meet mandatory acceptance criteria or have explicitly documented exceptions approved by the learner.
+
+
+## Project files
+
+- [Topic 1: Threat Modeling And Secure Defaults](../projects/section-13/topics/topic-01-threat-modeling-and-secure-defaults.md)
+- [Topic 2: Authentication Authorization And Secrets](../projects/section-13/topics/topic-02-authentication-authorization-and-secrets.md)
+- [Topic 3: Input Validation And Injection Defenses](../projects/section-13/topics/topic-03-input-validation-and-injection-defenses.md)
+- [Topic 4: Tls Certificates And Transport Security](../projects/section-13/topics/topic-04-tls-certificates-and-transport-security.md)
+- [Topic 5: Dependency And Build Supply Chain](../projects/section-13/topics/topic-05-dependency-and-build-supply-chain.md)
+- [Topic 6: Secure Testing And Vulnerability Response](../projects/section-13/topics/topic-06-secure-testing-and-vulnerability-response.md)
+- [Section capstone: Capstone 1 Integrated Builder](../projects/section-13/capstones/capstone-1-integrated-builder.md)
+- [Section capstone: Capstone 2 Production Scenario](../projects/section-13/capstones/capstone-2-production-scenario.md)
+- [Section capstone: Capstone 3 Independent Engineering Challenge](../projects/section-13/capstones/capstone-3-independent-engineering-challenge.md)

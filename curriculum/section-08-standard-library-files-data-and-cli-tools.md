@@ -38,3 +38,16 @@ Complete the three capstones under `projects/section-capstones/section-08/`. The
 - Topic projects required by the learner's plan have objective validation evidence.
 - The learner can explain the core mental models and key trade-offs without relying on memorized definitions.
 - All three section capstones meet mandatory acceptance criteria or have explicitly documented exceptions approved by the learner.
+
+
+## Project files
+
+- [Topic 1: Filesystem And Path Handling](../projects/section-08/topics/topic-01-filesystem-and-path-handling.md)
+- [Topic 2: Json Csv And Structured Data](../projects/section-08/topics/topic-02-json-csv-and-structured-data.md)
+- [Topic 3: Cli Arguments And Configuration](../projects/section-08/topics/topic-03-cli-arguments-and-configuration.md)
+- [Topic 4: Streaming And Buffered I O](../projects/section-08/topics/topic-04-streaming-and-buffered-i-o.md)
+- [Topic 5: Logging And Output Contracts](../projects/section-08/topics/topic-05-logging-and-output-contracts.md)
+- [Topic 6: Packaging And Distribution](../projects/section-08/topics/topic-06-packaging-and-distribution.md)
+- [Section capstone: Capstone 1 Integrated Builder](../projects/section-08/capstones/capstone-1-integrated-builder.md)
+- [Section capstone: Capstone 2 Production Scenario](../projects/section-08/capstones/capstone-2-production-scenario.md)
+- [Section capstone: Capstone 3 Independent Engineering Challenge](../projects/section-08/capstones/capstone-3-independent-engineering-challenge.md)

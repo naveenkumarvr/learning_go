@@ -38,3 +38,16 @@ Complete the three capstones under `projects/section-capstones/section-15/`. The
 - Topic projects required by the learner's plan have objective validation evidence.
 - The learner can explain the core mental models and key trade-offs without relying on memorized definitions.
 - All three section capstones meet mandatory acceptance criteria or have explicitly documented exceptions approved by the learner.
+
+
+## Project files
+
+- [Topic 1: Structured Logs Metrics And Traces](../projects/section-15/topics/topic-01-structured-logs-metrics-and-traces.md)
+- [Topic 2: Health Readiness And Diagnostics](../projects/section-15/topics/topic-02-health-readiness-and-diagnostics.md)
+- [Topic 3: Slos Slis And Error Budgets](../projects/section-15/topics/topic-03-slos-slis-and-error-budgets.md)
+- [Topic 4: Graceful Shutdown And Lifecycle Management](../projects/section-15/topics/topic-04-graceful-shutdown-and-lifecycle-management.md)
+- [Topic 5: Configuration Feature Flags And Rollout](../projects/section-15/topics/topic-05-configuration-feature-flags-and-rollout.md)
+- [Topic 6: Incident Response And Runbooks](../projects/section-15/topics/topic-06-incident-response-and-runbooks.md)
+- [Section capstone: Capstone 1 Integrated Builder](../projects/section-15/capstones/capstone-1-integrated-builder.md)
+- [Section capstone: Capstone 2 Production Scenario](../projects/section-15/capstones/capstone-2-production-scenario.md)
+- [Section capstone: Capstone 3 Independent Engineering Challenge](../projects/section-15/capstones/capstone-3-independent-engineering-challenge.md)
