@@ -1,0 +1,1 @@
+Follow `AGENTS.md` and `.agents/learning-workflow.md` as the authoritative shared rules. Read `progress.md` and the relevant curriculum/project specification before starting. Do not pre-create reports or sample submissions; do not mark work Passed without evidence. Keep learning local-first, practical, and focused.
